@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel='stylesheet' href='style/style.css'>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="image/logo.png" alt="logo.png">
+                <h1>HighTech Store</h1>
+            </div>
+            <nav>
+                <a href="index.html" target="_blank" class="actif" >Accueil</a>
+                <a href="pages/pc.html" target="_blank">PC</a>
+                <a href="pages/inscription.html" target="_blank">inscription</a>
+                <a href="pages/infos.html" target="_blank">infos</a>
+                <a href="pages/service_aprés _vente.html" target="_blank">Service aprés vente</a>
+            </nav>
+        </header>
+        <main class="card">
+            <article>
+                <h2>Présentation de l'entreprise</h2>
+                <hr>
+                <p>Bienvenue chez <strong>HighTechstore</strong>, votre spécialiste et rédérence incontournable dans la
+                    vente de matériel informatique de haute qualité.Depuis notre création,nous nous engageons à fournir
+                    aux
+                    particuliers comme aux professionnels des équipements performants adaptés à tous les besoins et à
+                    tous
+                    les budgets.</p>
+                <p>Découvrez notre vaste séléction de composants,d'ordinateurs de bureau,de portables et d'accessoires
+                    de
+                    dernière génération avec un service après-vente irréprochable</p>
+            </article>
+            <section>
+                <h2>Nos catégories de Produits</h2>
+                <hr>
+                <p>Parcourez notre catalogue structuré par catégories de matériel informatique:</p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>Ordinateurs et portables</dt>
+                            <dd>
+                                <ul>
+                                    <li class="ti">PC de bureau et PC portables (Accéder à la page PC)</li>
+                                    <li>PC Gamer & Stations de travail</li>
+                                    <li>
+                                        <dl>
+                                            <dt>Accessoires PC</dt>
+                                            <dd>
+                                                <ol>
+                                                    <li>Souris(Filaire & sans fil)</li>
+                                                    <li>Claviers(Mécanique & Ergonomiques)</li>
+                                                    <li>Tapis de souris & support PC</li>
+                                                </ol>
+                                            </dd>
+                                        </dl>
+                                    </li>
+
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>Impression et numérisation</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>Imprimantes</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>Imprimantes jet d'ancre</li>
+                                                    <li>Imprimantes Laser(Monochrome et Couleur)</li>
+                                                    <li>Imprimantes Multifonctions</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>Scanners(scanners à plat & Scanners portables)</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>Périphériques & affichage</dt>
+                            <dd>
+                                <ul>
+                                    <li>Ecran et Munitions</li>
+                                    <li>Stockage externe(disques durs externes,SSD portables,clé USB)</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <aside>
+            <div>
+            <h2>Espace de connexion</h2>
+            <hr class="line">
+        </div>
+            <form action="connexion.php" method="post">
+                <label for="identifiant">identifiant</label><br>
+                <input type="text" name="id" id="id">
+                <br>
+                <label for="mdp">mot de passe</label><br>
+                <input type="password" name="mdp" id="mdp">
+                <br>
+                <input type="submit" value="se connecter" class="btn">
+                <br>
+                <hr class="ln">
+                <p>vous n'avez pas de compte? <a href="pages/inscription.html" target="_blank">inscrivez-vous ici</a>
+                </p>
+            </form>
+        </aside>
+        <footer>
+            <h3>&copy2026 HighTechStore-tous droits réservés | Auteur:</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

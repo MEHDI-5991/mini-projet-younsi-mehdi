@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='../style/style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img src="../image/logo.png" alt="logo.png">
+                <h1>HighTech Store</h1>
+            </div>
+            <nav>
+                <a href="../index.html" target="_blank">Accueil</a>
+                <a href="pc.html" target="_blank" class="actif">PC</a>
+                <a href="inscription.html" target="_blank">inscription</a>
+                <a href="infos.html" target="_blank">infos</a>
+                <a href="service_aprés _vente.html" target="_blank">Service aprés vente</a>
+            </nav>
+            </nav>
+        </header>
+        <main class="card">
+            <h2>Catalogue des Ordinateurs</h2>
+            <hr>
+            <section>
+                <form action="recherche.php" method="post">
+                    <table class="ftab">
+                        <tr>
+                            <td><label for="recherche">Recherche par mot clé:</label><br>
+                                <input type="text" name="recherche" id="rech" placeholder="Ex:Gaming,Intel,Lenovo">
+                            </td>
+                            <td><label for="triparprix">tri par prix:</label><br>
+                                <select name="tri" id="tri">
+                                    <option value="prix asc">Prix Croissant</option>
+                                    <option value="pricdec">Prix décroissant</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn">Filtrer</button>
+                            </td>
+
+                        </tr>
+                    </table>
+                </form>
+                <table>
+                    <tr>
+                        <th>Référence</th>
+                        <th>photo</th>
+                        <th>description</th>
+                        <th>Prix</th>
+                    </tr>
+                    <tr>
+                        <td>21QV002HUS</td>
+                        <td><img src="../image/thinkpad.png" alt="lenovo thinkpad" class="prod"></td>
+                        <td>
+                            <ul>
+                                <li>Modèle:Lenovo ThinkPad</li>
+                                <li>Processeur:Intel Core Ultra 7</li>
+                                <li>Mémoire RAM:16 Go DDR5</li>
+                                <li>Stockage:512 Go SSD NVMe</li>
+                                <li>Ecran:16 pouces FHD+</li>
+                            </ul>
+                        </td>
+                        <td>2 450 TND</td>
+                    </tr>
+                    <tr>
+                        <td>G614JV</td>
+                        <td><img src="../image/asus.png" alt="asus rog strix" class="prod"></td>
+                        <td>
+                            <ul>
+                                <li>Modèle:ASUS ROG Strix</li>
+                                <li>Processeur:AMD Ryzen 7 7735HS</li>
+                                <li>Mémoire RAM:32 Go DDR5</li>
+                                <li>Carte Graphique:NVIDIA RTX 4060 8Go</li>
+                                <li>Stockage: 01 To SSD NVMe</li>
+                            </ul>
+                        </td>
+                        <td>3 890 TND</td>
+                    </tr>
+                    <tr>
+                        <td>6A840EA</td>
+                        <td><img src="../image/prodesk400-i5.png" alt="HP prodesk400-i5" class="prod"></td>
+                        <td>
+                            <ul>
+                                <li>Modèle:HP ProDesk 400 G9</li>
+                                <li>Processeur:Intel Core i5-13500</li>
+                                <li>Mémoire RAM:8 Go DDR4</li>
+                                <li>Stockage:256 Go SSD</li>
+                                <li>Inclus:Clavier+Souris filiares</li>
+                            </ul>
+                        </td>
+                        <td>1 620 TND</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h3>&copy HighTechstore-tous les droits réservés|Auteur:</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

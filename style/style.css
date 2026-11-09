@@ -1,0 +1,255 @@
+    :root {
+        --primary-color: #007bff;
+        /* Bleu principal(Boutons,Liens au survol, bordures)*/
+        --primary-hover: #0056b3;
+        /* Bleu foncé (Effet survol bouton/lien) */
+        --dark-header: #1a252f;
+        /* Fond En-tête, Pied de page, Titre tableau */
+        --dark-nav: #2c3e50;
+        /* Fond des boutons du menu de navigation */
+        --dark-sub-header: #3449;
+        /* Sous-titres du tableau des horaires */
+        /* Couleurs de fond */
+        --bg-body: #f4f6f9;
+        /* Fond général de la page */
+        --bg-card: #ffffff;
+        /* Fond des cartes / conteneurs */
+        --bg-search: #e9ecef;
+        /* Fond de la barre de recherche */
+        --bg-placeholder: #e2e8f0;
+        /* Fond des emplacements d'images */
+        /* Couleurs de texte */
+        --text-primary: #333333;
+        /* Couleur de texte principal */
+        --text-muted: #4a5568;
+        /* Texte de définition / secondaire */
+        --text-light: #ffffff;
+        /* Texte clair sur fond sombre */
+        --text-placeholder: #64748b;
+        /* Texte des images d'illustration */
+        --text-price: #d9534f;
+        /* Rouge pour afficher les prix */
+        /* Couleurs de bordures */
+        --border-color: #dddddd;
+        /* Bordures des cartes */
+        --border-table: #cccccc;
+        /* Bordures des tableaux */
+        --border-placeholder: #cbd5e1;
+        /* Bordures des espaces images */
+    } 
+    *{
+        box-sizing: border-box;
+        
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container{
+        display: grid;
+        min-height: 100dvh;
+        background-color: var(--bg-card);
+        gap: 13px;
+        box-sizing: border-box;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--dark-header);
+    }
+    header div{
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 2rem;
+        color: var(--text-light);
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    nav a{
+        border:3px  var(--dark-nav);
+        border-radius: 5px;
+        color: var(--text-light);
+        text-decoration: none;
+        padding: 4px;
+        margin: 1px;
+        background-color: var(--dark-nav);
+    }
+    .actif{
+        background-color: var(--primary-hover);
+    }
+    img{
+        width: 90px;
+        height: 90px;
+    }
+    main article,section,aside{
+        border: 3px solid var(--border-color);
+        border-radius: 8px;
+        padding: 4px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        height:100%;
+        justify-content:space-around ;
+    }
+    label,input{
+        margin-bottom: 5px;
+        margin-right: 70px;
+    }
+    h2{
+        font-size: 1,5rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    }
+    h3{
+        font-size: 1,5rem;
+        text-align: center;
+        color:var(--text-light);
+    }
+    footer{
+        background-color: var(--dark-header);
+    }
+    span a{
+        color: var(--primary-color);
+    }
+    .btn{
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        border-radius: 5px ;
+        border: 20px;
+        padding: 8px;
+        margin-top: 3px;
+    }
+    .ti{
+        color:var(--primary-color);
+    }
+    .line{
+        border: 1px solid var(--primary-color);
+    }
+    aside{
+        width: 300px;
+        height: 350px;
+        gap: 5px;
+    }
+
+    .warn{
+        color: red;
+    }
+    h4{
+        border-left: 2px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+    .line{
+        width: 290px;
+        border: 1px solid var(--primary-color);
+        margin:0px;
+    }
+    .ln{
+        border: 1px solid;
+    }
+    section{
+        margin:0px;
+
+    }
+   hr{
+        border: 1px solid var(--primary-color);
+    }
+    .ftab tr td{
+        background-color: var(--bg-search);
+        border-style: none;
+        margin: 5px;
+    }
+    .ftab tr td input,select{
+        margin: 5px;
+        width: 85%;
+    }
+    table tr th{
+        background-color: var(--dark-header);
+        color: var(--text-light);
+    }
+    table{
+        border-collapse: collapse;
+        border-spacing: 2px;
+        width: 100%;
+    }
+    table>tr,th,td,.htab{
+        border: 2px solid var(--border-table);
+        
+    }
+    .prod{
+        width: 70px;
+        height: 70px;
+    }
+    caption,.htab tr:first-child td:first-child,tr:nth-child(5) td:first-child{
+        background-color: var(--dark-header);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card{
+        border: 3px solid var(--border-color);
+        border-radius: 8px;
+        margin-left: 70px;
+    }
+    .itab tr td{
+        border-style: none;
+        padding: 30px;
+    }
+    .itab tr:nth-child(5) td{
+        background-color: white;
+        color:black
+    }
+    .itab tr td input{
+        width: 300px;
+    }
+    .itab tr:nth-child(2) td:first-child input{
+        width: 10px;
+
+    }
+    .content{
+        display: block;
+    }
+    @media(min-width:610px){
+        .container{
+            grid-template-columns: auto 350px;
+            grid-template-rows:auto 1fr auto ;
+            margin:0 auto;
+        }
+        header{
+            flex-direction: row;
+            justify-content: space-between;
+            grid-row: 1/2 ;
+            grid-column: 1/-1;
+            margin: 0;
+
+        }
+        nav{
+            margin: 25px;
+        }
+        main{
+            grid-column:1/2;
+            grid-row:2/3 ;
+            margin-left: 30px;
+            gap: 12px;
+            margin-bottom: 0;
+        }
+        aside{
+            grid-column: 2/3;
+            grid-row:2/3 ;
+            margin-right: 50px;
+
+
+        }
+        footer{
+            grid-column:1/-1 ;
+            grid-row: 3/4;
+        }
+    }

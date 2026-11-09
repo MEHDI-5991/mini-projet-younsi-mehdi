@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Inscription</title>
+    <link rel='stylesheet' href='../style/style.css'>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <div>
+            <img src="../image/logo.png" alt="high">
+            <h1>HighTechStore</h1>
+        </div>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="pc.html">PC</a>
+            <a href="inscription.html" class="actif">Inscription</a>
+            <a href="infos.html">Infos</a>
+            <a href="service_aprés _vente.html">Services aprés vente</a>
+        </nav>
+    </header>
+    <main class="card">
+        <h2>Formulaire d'inscription</h2>
+        <hr>
+        <form action="inscription.php" method="post">
+            <table class="itab">
+                <tr>
+                    <td>
+                        <label for="nom">nom:</label><br>
+                        <input type="text" name="nom" id="nom">
+                    </td>
+                    <td>
+                        <label for="prénom">prénom:</label><br>
+                        <input type="text" name="pre" id="pre">
+                    </td>
+                    <td>
+                        <label for="Dtn">date de naissance:</label><br>
+                        <input type="date" name="dtn" id="dtn">
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                <label for="sexe">sexe:</label>
+                <input type="radio" name="sexe" id="g1" class="g">Masculin
+                <input type="radio" name="sexe" id="g2" class="g">Féminin
+                <br>
+                </td>
+                <td><label for="adr">Adresse:</label><br>
+                <input type="text" name="adr" id="adr">
+                </td>
+                <td><label for="codepostal">code postal:</label><br>
+                <input type="text" name="codepost" id="codepost"></td>
+                </tr>
+                <tr>
+                    <td><label for="ville">ville:</label><br>
+                    <input type="text" name="ville" id="ville"></td>
+                    <td><label for="Gouvernement:">Gouvernement</label>
+                    <select name="gov" id="gov">
+                        <option value="">Tunis</option>
+                        <option value="">Ariana</option>
+                        <option value="">Ben Arous</option>
+                        <option value="">Siliana</option>
+                        <option value="">Sousse</option>
+                        <option value="">Bizerte</option>
+                        <option value="">Jendouba</option>
+                        <option value="">Nabeul</option>
+                        <option value="">Béja</option>
+                        <option value="">Monastir</option>
+                        <option value="">Mahdia</option>
+                        <option value="">Kairaouane</option>
+                        <option value="">Sfax</option>
+                        <option value="">Sidi Bouzid</option>
+                        <option value="">Gasrin</option>
+                        <option value="">Kef</option>
+                        <option value="">Gabés</option>
+                        <option value="">Medenine</option>
+                        <option value="">Zarzis</option>
+                        <option value="">Tataouine</option>
+                        <option value="">Gafsa</option>
+                        <option value="">Touzeur</option>
+                        <option value="">Gbeli</option>
+                        <option value="">manouba</option>
+                    </select></td>
+                    <td rowspan="2" style="vertical-align: top;"><label for="fonction">fonction:</label><br>
+                    <input type="text" name="fontion" id="fonction"></td>
+                </tr>
+                <tr>
+                    <td><label for="adressemail">Adresse E-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="nom@example.com"></td>
+                    <td><label for="Numéro de téléphone">Numéro de téléphone:</label><br>
+                    <input type="tel" name="telephone" id="telephone"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label for="remarques">remarques:</label><br>
+                    <textarea name="reamrques" id="remarques" placeholder="Vos réponses ou précisions" cols="150"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="submit" value="Valider l'inscription" class="btn"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <h3>&copy2026 HighTechStore-tous droits réservés|Auteur:</h3>
+    </footer>
+    </div>
+</body>
+
+</html>
